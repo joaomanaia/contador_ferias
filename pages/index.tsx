@@ -13,20 +13,20 @@ const Home: NextPage = () => {
   const [timeStateText, setTimeStateText] = useState("as aulas acabarem!")
 
   return (
-    <div className="flex flex-col dark:bg-gray-900 items-center justify-center h-screen w-screen overflow-hidden py-2">
+    <div className="flex flex-col bg-white dark:bg-gray-900 items-center justify-center h-screen w-screen overflow-hidden py-2">
       <Head>
         <title>Contador Ferias</title>
         <link rel="icon" href="/logo1-ipc.png" />
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 text-center
-        text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold select-none dark:text-white px-">
+        text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold select-none dark:text-white px-4 py-4 z-10">
         <h1>Faltam</h1>
         <div className="text-blue-600 dark:text-blue-500 mt-6">
           <CountDown end={timeState}/>
         </div>
         <div className="flex mt-6 items-center justify-center text-center">
-          <h1 className="md:flex items-center justify-center text-cente">
+          <h1 className="md:flex items-center justify-center text-center">
             para
             <div className="ml-3">
               <h1
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t dark:text-white dark:border-gray-800">
+      <footer className="static flex items-center justify-center w-full h-24 border-t py-4 dark:text-white dark:border-gray-800">
         <a
           className="flex items-center justify-center"
           href="https://infinitepower.ml"
