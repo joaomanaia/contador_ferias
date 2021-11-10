@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             <div className="ml-3">
               <h1
                 onClick={() => setMenuOpen(!menuOpen)}
-                className={`p-2 hover:bg-blue-600 hover:text-white rounded-2xl cursor-pointer ${menuOpen && "bg-blue-600 text-white"}`}>
+                className={`p-2 hover:bg-blue-600 hover:text-white rounded-2xl cursor-pointer ${menuOpen ? "bg-blue-600 text-white" : "bg-gray-200 dark:bg-gray-800"}`}>
                 {timeStateText}
               </h1>
               {menuOpen && <DropdownMenu 
